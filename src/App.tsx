@@ -1,23 +1,22 @@
-import React from 'react';
 import './App.scss';
 import { Routes, Route } from 'react-router-dom';
 import Footer from './components/Footer/Footer';
 import Header from './components/Header/Header';
-import MainPage from './routes/MainPage';
+import MainPage from './routes/MainPage/MainPage';
 import ShopPage from './routes/ShopPage';
 import Catalog from './routes/Catalog';
 
 function App() {
   return (
-    <div className="App">
+    <div className="page">
       <Header />
-      <div className="main">
+      <main>
         <Routes>
           <Route path="/" element={<MainPage />} />
           <Route path="/catalog" element={<Catalog />} />
           <Route path="/shop" element={<ShopPage />} />
         </Routes>
-      </div>
+      </main>
       <Footer />
     </div>
   );

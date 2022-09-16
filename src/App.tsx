@@ -4,7 +4,7 @@ import Footer from './components/Footer/Footer';
 import Header from './components/Header/Header';
 import MainPage from './routes/MainPage/MainPage';
 import ShopPage from './routes/ShopPage';
-import Catalog from './routes/Catalog';
+import Catalog from './routes/Catalog/Catalog';
 
 function App() {
   return (

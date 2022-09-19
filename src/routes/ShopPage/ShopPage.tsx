@@ -1,10 +1,11 @@
 import React, { Component } from 'react';
+import './shopPage.scss';
 
 class ShopPage extends Component {
   render() {
     return (
       <div>
-        <span>корзина</span>
+        <span>корзина пуста</span>
       </div>
     );
   }

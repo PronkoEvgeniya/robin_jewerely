@@ -1,1 +1,28 @@
 @import '../../constants.scss';
+
+header {
+  background: #ffffff5e;
+  nav {
+    display: flex;
+    justify-content: flex-end;
+    gap: 2rem;
+    align-items: center;
+    padding: 1.5rem 2rem;
+    a:first-child {
+      margin: 0 auto 0 0;
+    }
+    a:last-child {
+      display: flex;
+      span {
+        font-size: 2rem;
+        padding-left: 0.5rem;
+        font-weight: 400;
+      }
+    }
+    span {
+      text-transform: lowercase;
+      font-style: italic;
+      font-weight: 700;
+    }
+  }
+}

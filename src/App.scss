@@ -1,5 +1,42 @@
-body {
+@import './constants.scss';
+
+*,
+*::after,
+*::before {
   margin: 0;
   padding: 0;
   box-sizing: border-box;
+}
+li {
+  list-style-type: none;
+}
+a {
+  text-decoration: none;
+  color: inherit;
+}
+button,
+button:focus,
+button:active {
+  outline: none;
+  cursor: pointer;
+}
+button {
+  @include btnReg();
+}
+button:hover {
+  @include btnHov();
+}
+textarea {
+  resize: none;
+}
+html {
+  font-size: 10px;
+  background-color: $bg;
+}
+body {
+  max-width: 1440px;
+  margin: 0 auto;
+  font-size: 2.8rem;
+  color: $textRegular;
+  font-family: $notoSans;
 }

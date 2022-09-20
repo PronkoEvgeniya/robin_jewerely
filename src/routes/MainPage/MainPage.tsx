@@ -8,7 +8,7 @@ class MainPage extends Component {
     return (
       <>
         <Banner />
-        <div>
+        <div className="main__container">
           <div>
             <h2>О нас</h2>
             <p>

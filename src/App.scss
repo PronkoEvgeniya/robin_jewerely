@@ -1,4 +1,4 @@
-@import './constants.scss';
+@import "./constants.scss";
 
 *,
 *::after,
@@ -28,6 +28,10 @@ button:hover {
 }
 textarea {
   resize: none;
+}
+input {
+  border: none;
+  outline: none;
 }
 html {
   font-size: 10px;

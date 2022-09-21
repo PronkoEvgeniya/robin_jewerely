@@ -1,1 +1,34 @@
-@import '../../constants.scss';
+@import "../../constants.scss";
+
+aside {
+    position: relative;
+    border-right: 0.5rem dotted $green;
+}
+.sidebar__container {
+    position: fixed;
+    width: calc(25% + 0.5rem);
+    display: flex;
+    flex-direction: column;
+    gap: 5rem;
+    padding: 5rem 2rem;
+    #search-input {
+        background-color: transparent;
+        border: 3px solid $green;
+        border-radius: 6px;
+        color: $textDark;
+        padding: 5px 10px;
+        font-size: 2.8rem;
+        &::-webkit-search-cancel-button {
+            cursor: pointer;
+        }
+        &::placeholder {
+            color: $textDark;
+        }
+    }
+}
+
+@media (min-width: 1440px) {
+    .sidebar__container {
+        width: 360px;
+    }
+}

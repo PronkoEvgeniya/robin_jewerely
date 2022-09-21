@@ -1,13 +1,17 @@
-@import '../../constants.scss';
+@import "../../constants.scss";
 
 header {
-  background: #ffffff5e;
+  padding-bottom: calc(108px + 3rem);
   nav {
     display: flex;
     justify-content: flex-end;
     gap: 2rem;
     align-items: center;
     padding: 1.5rem 2rem;
+    background: #ffffff5e;
+    backdrop-filter: blur(5px);
+    position: fixed;
+    width: 100%;
     a:first-child {
       margin: 0 auto 0 0;
     }
@@ -24,5 +28,11 @@ header {
       font-style: italic;
       font-weight: 700;
     }
+  }
+}
+
+@media (min-width: 1440px) {
+  header nav {
+    width: 1440px;
   }
 }

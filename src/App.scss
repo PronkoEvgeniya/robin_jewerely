@@ -1,4 +1,4 @@
-@import "./constants.scss";
+@import './constants.scss';
 
 *,
 *::after,
@@ -43,4 +43,48 @@ body {
   font-size: 2.8rem;
   color: $textRegular;
   font-family: $notoSans;
+}
+.page {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  min-height: 100vh;
+}
+main {
+  margin: 0 0 auto;
+}
+@media (max-width: 1400px) {
+  html {
+    font-size: 9px;
+  }
+}
+@media (max-width: 1225px) {
+  html {
+    font-size: 8px;
+  }
+}
+@media (max-width: 1090px) {
+  html {
+    font-size: 7px;
+  }
+}
+@media (max-width: 950px) {
+  html {
+    font-size: 6px;
+  }
+}
+@media (max-width: 770px) {
+  html {
+    font-size: 5px;
+  }
+}
+@media (max-width: 470px) {
+  html {
+    font-size: 4px;
+  }
+}
+@media (max-width: 410px) {
+  html {
+    font-size: 3px;
+  }
 }

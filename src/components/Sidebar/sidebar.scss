@@ -1,34 +1,97 @@
-@import "../../constants.scss";
+@import '../../constants.scss';
 
 aside {
-    position: relative;
-    border-right: 0.5rem dotted $green;
+  position: relative;
+  border-right: 0.5rem dotted $green;
 }
 .sidebar__container {
-    position: fixed;
-    width: calc(25% + 0.5rem);
-    display: flex;
-    flex-direction: column;
-    gap: 5rem;
-    padding: 5rem 2rem;
-    #search-input {
-        background-color: transparent;
-        border: 3px solid $green;
-        border-radius: 6px;
-        color: $textDark;
-        padding: 5px 10px;
-        font-size: 2.8rem;
-        &::-webkit-search-cancel-button {
-            cursor: pointer;
-        }
-        &::placeholder {
-            color: $textDark;
-        }
+  position: fixed;
+  width: calc(25% + 0.5rem);
+  display: flex;
+  flex-direction: column;
+  gap: 5rem;
+  padding: 5rem 2rem;
+  max-height: 80vh;
+  overflow-y: scroll;
+  &::-webkit-scrollbar {
+    display: none;
+  }
+  #search-input {
+    background-color: transparent;
+    border: 3px solid $green;
+    border-radius: 6px;
+    color: $textDark;
+    padding: 5px 10px;
+    font-size: 2.8rem;
+    &::-webkit-search-cancel-button {
+      cursor: pointer;
     }
+    &::placeholder {
+      color: $textDark;
+    }
+  }
+  .sidebar__sort {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 1rem;
+    select {
+      background-color: transparent;
+      border: 3px solid $green;
+      border-radius: 6px;
+      color: $textDark;
+      padding: 5px 10px;
+      font-size: 2.8rem;
+      width: 100%;
+      overflow-x: scroll;
+      cursor: pointer;
+      &:active,
+      &:focus {
+        outline: none;
+      }
+      &:hover {
+        background-color: $green;
+      }
+      option {
+        font-size: 1.5rem;
+        background-color: $textDark;
+        color: $white;
+      }
+    }
+  }
+  .sidebar__filters-color,
+  .sidebar__filters-type {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 2rem;
+    input {
+      display: none;
+    }
+
+    label {
+      font-size: 2rem;
+      font-style: italic;
+      border: 2px solid $green;
+      border-radius: 5px;
+      cursor: pointer;
+      padding: 5px;
+    }
+    label:hover {
+      border-color: $textDark;
+    }
+    input:checked + label {
+      background-color: $green;
+      color: $white;
+    }
+
+    h2 {
+      font-size: 3rem;
+      width: 100%;
+    }
+  }
 }
 
 @media (min-width: 1440px) {
-    .sidebar__container {
-        width: 360px;
-    }
+  .sidebar__container {
+    width: 360px;
+  }
 }

@@ -2,6 +2,7 @@ import { Component } from 'react';
 import cards from '../../assets/cards.json';
 import Sidebar from '../../components/Sidebar/Sidebar';
 import './catalog.scss';
+import './cardContainer.scss';
 
 class Catalog extends Component {
   render() {

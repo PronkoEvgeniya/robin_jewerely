@@ -5,7 +5,7 @@ class Sidebar extends Component {
   render() {
     return (
       <aside>
-        <div className="sidebar__container">
+        <form className="sidebar__container">
           <input
             type="search"
             name="search-input"
@@ -14,15 +14,23 @@ class Sidebar extends Component {
             placeholder="Поиск..."
           />
           <div className="sidebar__sort">
-            <button className="btn__sort-price">По возрастанию цены</button>
-            <button className="btn__sort-abc">По названию</button>
+            <select>
+              <option value="Сортировать по цене">Сортировать по цене</option>
+              <option value="По возрастанию">По возрастанию</option>
+              <option value="По убыванию">По убыванию</option>
+            </select>
+            <select>
+              <option value="Сортировать по цене">Сортировать по названию</option>
+              <option value="По возрастанию">А-Я</option>
+              <option value="По убыванию">Я-А</option>
+            </select>
           </div>
           <div className="sidebar__filters-color">
             <h2>Цвет фурнитуры:</h2>
             <input type="checkbox" name="1" id="colorGold" />
-            <label htmlFor="colorGold"></label>
+            <label htmlFor="colorGold">Серебристый</label>
             <input type="checkbox" name="2" id="colorSilver" />
-            <label htmlFor="colorSilver"></label>
+            <label htmlFor="colorSilver">Золотистый</label>
           </div>
           <div className="sidebar__filters-type">
             <h2>Тип изделия:</h2>
@@ -34,7 +42,7 @@ class Sidebar extends Component {
             <label htmlFor="rings">Кольцо</label>
           </div>
           <button className="sidebar__btn-trash">Сброс фильтров</button>
-        </div>
+        </form>
       </aside>
     );
   }

@@ -1,5 +1,90 @@
-body {
+@import './constants.scss';
+
+*,
+*::after,
+*::before {
   margin: 0;
   padding: 0;
   box-sizing: border-box;
+}
+li {
+  list-style-type: none;
+}
+a {
+  text-decoration: none;
+  color: inherit;
+}
+button,
+button:focus,
+button:active {
+  outline: none;
+  cursor: pointer;
+}
+button {
+  @include btnReg();
+}
+button:hover {
+  @include btnHov();
+}
+textarea {
+  resize: none;
+}
+input {
+  border: none;
+  outline: none;
+}
+html {
+  font-size: 10px;
+  background-color: $bg;
+}
+body {
+  max-width: 1440px;
+  margin: 0 auto;
+  font-size: 2.8rem;
+  color: $textRegular;
+  font-family: $notoSans;
+}
+.page {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  min-height: 100vh;
+}
+main {
+  margin: 0 0 auto;
+}
+@media (max-width: 1400px) {
+  html {
+    font-size: 9px;
+  }
+}
+@media (max-width: 1225px) {
+  html {
+    font-size: 8px;
+  }
+}
+@media (max-width: 1090px) {
+  html {
+    font-size: 7px;
+  }
+}
+@media (max-width: 950px) {
+  html {
+    font-size: 6px;
+  }
+}
+@media (max-width: 770px) {
+  html {
+    font-size: 5px;
+  }
+}
+@media (max-width: 470px) {
+  html {
+    font-size: 4px;
+  }
+}
+@media (max-width: 410px) {
+  html {
+    font-size: 3px;
+  }
 }

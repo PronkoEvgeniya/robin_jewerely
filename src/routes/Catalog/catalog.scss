@@ -1,1 +1,6 @@
 @import '../../constants.scss';
+
+.catalog__container {
+  display: grid;
+  grid-template-columns: 1fr 3fr;
+}

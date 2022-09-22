@@ -1,11 +1,12 @@
 import React, { Component } from 'react';
 import { IconGh, IconIg, IconVk } from '../../assets/icons.sprite';
 import './footer.scss';
+import bg from '../../assets/images/forestBG.jpg';
 
 class Footer extends Component {
   render() {
     return (
-      <footer>
+      <footer style={{ backgroundImage: `url(${bg})` }}>
         <ul>
           <li>
             <a href="https://github.com/PronkoEvgeniya">

@@ -1,1 +1,21 @@
 @import '../../constants.scss';
+
+.banner__container {
+  background-size: cover;
+  background-size: cover;
+  display: flex;
+  flex-direction: column;
+  text-align: center;
+  padding: 23rem 3rem;
+  gap: 5rem;
+  h1 {
+    font-size: 8rem;
+    color: $textDark;
+    text-transform: uppercase;
+  }
+  h2 {
+    color: $white;
+    font-style: italic;
+    font-weight: normal;
+  }
+}

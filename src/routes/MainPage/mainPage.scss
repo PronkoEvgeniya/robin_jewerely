@@ -1,1 +1,27 @@
 @import '../../constants.scss';
+
+.main__container {
+  padding: 3rem 4rem;
+  display: flex;
+  flex-direction: column;
+  gap: 8rem;
+  & > div {
+    padding: 0 0 3rem;
+    border-bottom: 0.5rem dotted $green;
+    h2 {
+      text-align: center;
+
+      letter-spacing: 0.6rem;
+      margin-bottom: 4rem;
+    }
+    p {
+      padding: 0 5rem;
+      color: $textLight;
+      font-style: italic;
+    }
+  }
+  a {
+    display: flex;
+    justify-content: center;
+  }
+}

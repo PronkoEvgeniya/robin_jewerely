@@ -3,3 +3,23 @@
 $lato: 'Lato', sans-serif;
 $notoSans: 'Noto Sans Display', sans-serif;
 $bg: #dddddd;
+$white: #ffffff;
+$green: #509864;
+$textDark: #333333;
+$textRegular: #565656;
+$textLight: #828282;
+
+@mixin btnReg {
+  display: block;
+  color: $white;
+  background-color: $green;
+  font-size: 2.8rem;
+  padding: 1rem 1.5rem;
+  border: 0.2rem solid $green;
+  border-radius: 2rem;
+}
+@mixin btnHov {
+  color: $textDark;
+  background-color: transparent;
+  border: 0.2rem solid $textDark;
+}
